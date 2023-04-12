@@ -1,6 +1,6 @@
-// Tarayıcıda açık olan tüm sekmelerin URL'lerini al ve popup.html içinde listele
+
 chrome.tabs.query({ currentWindow: true }, function (tabs) {
-  var tabList = document.getElementById("tabList");
+  var tabList = document.getElementById("tabSection");
   tabs.forEach(function (tab) {
     var listItem = document.createElement("li");
     var link = document.createElement("a");
